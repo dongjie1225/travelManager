@@ -163,18 +163,23 @@ export default {
 
 <style scoped>
 .login-container {
-  min-height: 100vh;
-  width: 100%;
-  min-width: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   /* 使用风景图片作为背景 */
   background: url('https://img0.baidu.com/it/u=2175486724,1309616907&fm=253&fmt=auto&app=138&f=JPEG?w=713&h=475') no-repeat center center;
   background-size: cover;
-  position: relative;
-  /* 优化：防止背景图在移动端滚动时重复加载或错位 */
   background-attachment: fixed; 
+
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  overflow-x: hidden; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5; 
+  /* 确保容器本身没有奇怪的 padding 或 margin 影响宽度 */
+  padding: 0;
+  margin: 0;
 }
 
 /* 背景遮罩层，让登录框更突出 */

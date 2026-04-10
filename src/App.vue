@@ -21,7 +21,7 @@
   </div>
 </template>
 
-<style scoped>
+<style>
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -33,5 +33,27 @@
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* height: 100%; */
+  /* 关键：禁止横向滚动，防止手机端出现左右拖动 */
+  overflow-x: hidden; 
+  /* 优化移动端点击高亮颜色 */
+  -webkit-tap-highlight-color: transparent;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh; /* 确保至少占满一屏高度 */
+  display: flex;
+  flex-direction: column;
+  /* 字体优化，提升移动端阅读体验 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 </style>
