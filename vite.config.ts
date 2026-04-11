@@ -37,7 +37,7 @@ export default defineConfig({
         ]
       },
       manifest: {
-        name: 'Travel Tracker',
+        name: 'Travel Manager',
         short_name: 'Travel',
         start_url: '/',
         display: 'standalone',
