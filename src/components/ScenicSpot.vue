@@ -273,7 +273,7 @@ export default defineComponent({
 			if (isGuest.value) {
 				alert("Please login to add or modify reviews");
 				// 可跳转到登录页
-				router.push('/travelManager');
+				router.push('/');
 				return;
 			}
 			currentSpot.value = spot;
@@ -330,7 +330,7 @@ export default defineComponent({
 
 		const goToLogin = () => {
 			closeModal();
-			router.push("/travelManager");
+			router.push("/");
 		};
 
 		return {

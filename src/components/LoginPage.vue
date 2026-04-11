@@ -128,7 +128,7 @@ export default {
           localStorage.setItem('currentUser', JSON.stringify(user))
           
           // 跳转到主页面
-          router.push('/travelManager/TravelApp')
+          router.push('/TravelApp')
         }
       } catch (err: any) {
         errorMsg.value = err.message || 'Operation failed, please try again'
@@ -145,7 +145,7 @@ export default {
         isGuest: true
       }
       localStorage.setItem('currentUser', JSON.stringify(guestUser))
-      router.push('/travelManager/TravelApp')
+      router.push('/TravelApp')
     }
 
     return {
